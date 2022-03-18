@@ -1,27 +1,28 @@
-# Energi_latest_block_react
+# Ethereum_latest_block_react
 
-Full Stack Web Challenge
+Full Stack - Smart Contract
 
-Instructions
+**Instructions**
 
-1. Write the code
-2. Archive it
-3. Send the archive to your recruiter
-4. Expectations: the code should run by executing
+1. the code will run by executing
    yarn install
    yarn start
-5. **_ Expected node version: "^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0" _**
+2. Expected node version: 
+   "^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0"
 
-Challenge
-Write a React web application using any of the well-known frameworks (Gatsby, Material UI, etc.) that connects to either Energi or Ethereum blockchains using Web3 library, and displays
-the latest:
+**Specification**
+
+React web application that connects to Ethereum blockchains using Web3 library, and displays the latest:
 
 - Block number
 - Number of transactions
 - Miner (address that mined the block)
 - Total difficulty
 
-Add a button to pause or resume requests.
+Added a button to pause or resume requests.
 
-Extra
-If you want to impress, add a table populated with all transactions sorted by amount in the descending order.
+Added a table populated with all transactions sorted by amount in the descending order.
+
+**Running Result**
+
+![Screen Shot 2022-03-18 at 6 50 44 PM](https://user-images.githubusercontent.com/16378018/158990552-4d28eb95-27a3-4cbb-8d91-50f58c69a4da.png)
