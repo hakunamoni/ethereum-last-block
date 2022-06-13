@@ -62,42 +62,52 @@ function App() {
   }, [lastBlockNumber, setBlocks]);
 
   return (
-    <div className="max-w-screen-xl	m-auto">
-      <h1 className="text-center text-3xl font-bold pt-8">
-        Ethereum Latest Blocks and Transactions - Daniel Scott
-      </h1>
+    <div className="h-screen w-screen	bg-sky-100">
+      <div className="max-w-screen-xl	m-auto">
+        <h1 className="text-center text-3xl font-bold pt-8">
+          Ethereum Latest Blocks and Transactions - D. S.
+        </h1>
 
-      <div className="py-8 text-center">
-        <button
-          onClick={togglePlay}
-          className="content-center bg-sky-600 hover:bg-sky-700 text-white rounded-lg px-[32px] py-[12px]"
-        >
-          <b>{isPlaying ? "Pause" : "Resume"}</b>
-        </button>
-      </div>
-
-      <div className="grid grid-cols-2 gap-2">
-        <div className="shadow-md border border-grey-500 rounded-md">
-          <div className="p-4 border-b border-grey-500">
-            <h5 className="text-1xl font-bold">Ethereum Latest Blocks</h5>
-          </div>
-          <div className="px-4 overflow-auto" style={{ height: "70vh" }}>
-            <BlockList
-              blocks={Object.keys(blocks)
-                .sort((a, b) => b - a)
-                .map((blockNum) => blocks[blockNum])}
-            />
-          </div>
+        <div className="py-8 text-center">
+          <button
+            onClick={togglePlay}
+            className="content-center bg-sky-600 hover:bg-sky-700 text-white rounded-lg px-[32px] py-[12px]"
+          >
+            <b>{isPlaying ? "Pause" : "Resume"}</b>
+          </button>
         </div>
 
-        <div className="shadow-md border border-grey-500 rounded-md">
-          <div className="p-4 border-b border-grey-500">
-            <h5 className="text-1xl font-bold">Ethereum Latest Transactions</h5>
+        <div className="grid grid-cols-2 gap-2">
+          <div className="shadow-md border border-grey-500 rounded-md bg-white">
+            <div className="p-4 border-b border-grey-500 bg-slate-300">
+              <h5 className="text-1xl font-bold">Ethereum Latest Blocks</h5>
+            </div>
+            <div
+              className="px-4 overflow-auto bg-slate-100"
+              style={{ height: "70vh" }}
+            >
+              <BlockList
+                blocks={Object.keys(blocks)
+                  .sort((a, b) => b - a)
+                  .map((blockNum) => blocks[blockNum])}
+              />
+            </div>
           </div>
-          <div className="px-4 overflow-auto" style={{ height: "70vh" }}>
-            <TransactionList
-              transactions={blocks[lastBlockNumber]?.transactions}
-            />
+
+          <div className="shadow-md border border-grey-500 rounded-md bg-white">
+            <div className="p-4 border-b border-grey-500 bg-slate-300">
+              <h5 className="text-1xl font-bold">
+                Ethereum Latest Transactions
+              </h5>
+            </div>
+            <div
+              className="px-4 overflow-auto bg-slate-100"
+              style={{ height: "70vh" }}
+            >
+              <TransactionList
+                transactions={blocks[lastBlockNumber]?.transactions}
+              />
+            </div>
           </div>
         </div>
       </div>
