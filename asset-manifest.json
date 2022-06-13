@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ethereum-last-block/static/css/main.d3f15746.css",
+    "main.js": "/ethereum-last-block/static/js/main.64126314.js",
+    "static/js/787.d4d1ab20.chunk.js": "/ethereum-last-block/static/js/787.d4d1ab20.chunk.js",
+    "index.html": "/ethereum-last-block/index.html",
+    "main.d3f15746.css.map": "/ethereum-last-block/static/css/main.d3f15746.css.map",
+    "main.64126314.js.map": "/ethereum-last-block/static/js/main.64126314.js.map",
+    "787.d4d1ab20.chunk.js.map": "/ethereum-last-block/static/js/787.d4d1ab20.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3f15746.css",
+    "static/js/main.64126314.js"
+  ]
+}
